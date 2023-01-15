@@ -1,0 +1,33 @@
+<div class="publications-container" >
+
+
+    <article class="shop-container--card" *ngFor="let publication of publications">
+
+      <div class="card-photo-container">
+          <img src="{{ publication.product.photoUrl }}" class="card-photo">
+      </div>
+      <div class="shop-info-container">
+          <h3 class="shop-name"> {{ publication.product.baseProduct.name }} </h3>
+          <p class="shop-card--description"> {{ publication.product.baseProduct.description }} </p>
+
+            <div class="botton-info">
+              <p class="price">Price: {{ calculateTotalPrice(publication) }}$</p>
+              <p class="stock">Stock: {{ publication.quantity }} </p>
+
+              <div class="formulario-container">
+                <form name="formulario">
+                  <select class="cantidad" #quantitySelect>
+                    <option *ngFor="let i of getOptions(publication.quantity)" value="{{i}}">{{i}}</option>
+                  </select>
+                  <button class="shop-card--button" (click)="onAddToCartClick($event, publication, quantitySelect)">Add to cart</button>
+
+                </form>
+            </div>
+
+            </div>
+
+      </div>
+    </article>
+
+
+</div>

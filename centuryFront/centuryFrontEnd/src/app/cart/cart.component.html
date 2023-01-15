@@ -1,0 +1,32 @@
+<section id="plans" class="shop-container" >
+
+  <article class="shop-container--card" *ngFor="let item of cartService.getCart()">
+
+      <div class="card-photo-container">
+          <img src="{{item.publication.product.photoUrl}}" class="card-photo">
+      </div>
+      <div class="shop-info-container">
+          <h3 class="shop-name"> {{ item.publication.product.baseProduct.name }} </h3>
+          <p class="shop-card--description">{{ item.publication.product.baseProduct.description }} </p>
+
+              <div class="bot-container">
+                  <div class="button-container-p">
+                      <p class="price">Total: {{ calculateTotalPrice(item.publication, item.quantity) }}$</p>
+                      <p class="quantity">Quantity: {{item.quantity}}</p>
+                  </div>
+                  <form name="formulario">
+                      <button class="shop-card--button" (click)="removeFromCart(item.publication)">Remove</button>
+                  </form>
+          </div>
+      </div>
+  </article>
+
+</section>
+
+<div  class="totalPriceContainer" >
+  <p class="TotalPrice">Total: {{ totalPrice }}$</p>
+  <form name="formulario">
+    <button class="buy-button" (click)="savePurchase()">Buy</button>
+  </form>
+</div>
+

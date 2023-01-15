@@ -1,0 +1,33 @@
+<section id="plans" class="shop-container" >
+
+  <div class="purchasesContainer" *ngFor="let purchase of purchases">
+
+
+    <article class="shop-container--card" *ngFor="let item of purchase.items">
+      <div class="card-photo-container">
+            <img src="{{item.product.photoUrl}}" class="card-photo">
+      </div>
+      <div class="shop-info-container">
+        <h3 class="shop-name"> {{item.product.baseProduct.name}} </h3>
+        <p class="shop-card--description"> {{item.product.baseProduct.description}} </p>
+          <div class="bot-container">
+            <div class="button-container-p">
+              <p class="price">Total: {{calculateTotalPrice(item, item.quantity)}}$</p>
+               <p class="quantity">Quantity: {{item.quantity}} </p>
+            </div>
+          </div>
+        </div>
+    </article>
+
+    <!--
+    <div  class="totalPriceContainer" >
+      <p class="TotalPrice">Total:$</p>
+    </div>
+    -->
+
+  </div>
+
+</section>
+
+
+

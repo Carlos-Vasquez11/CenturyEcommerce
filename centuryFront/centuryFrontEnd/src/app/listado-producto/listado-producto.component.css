@@ -1,0 +1,129 @@
+.shop-container{
+  height: auto;
+  width: 100%;
+  min-width: 320px;
+  padding-bottom: 70px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items:flex-start;
+  overflow: hidden;
+}
+
+.shop-container--card{
+  display: flex;
+  position: relative;
+  min-width: 230px;
+  max-width: 600px;
+  height: 400px;
+  margin: 50px auto 0;
+  background-color: var(--just-white);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+  margin-bottom: 10px;
+}
+
+.card-photo{
+  object-fit:fill;
+  height: 100%;
+  width: 300px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.shop-info-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+  box-sizing:content-box;
+}
+
+.shop-name{
+  padding-top: 10px;
+  font-size: 2.3rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--black);
+  text-align: center;
+}
+
+.shop-card--description{
+  box-sizing:content-box;
+  font-size: 1.2rem;
+  color: #757575;
+  width: 90%;
+  align-self: center;
+  word-break: break-all;
+  overflow: hidden;
+  text-align: center;
+  height: 140px;
+}
+
+.formulario-container{
+  width: 230px;
+  height: 48px;
+  align-self: center;
+}
+
+.formulario{
+  height: 48px;
+}
+
+.shop-card--button{
+  width: 150px;
+  height: 48px;
+  background-color: #faf8f7;
+  border: 2px solid lightgray;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--black);
+}
+
+.botton-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.botton-info p{
+  width: 230px;
+}
+
+.price{
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.stock{
+  color: #757575;
+  font-weight: bold;
+}
+
+.cantidad{
+  height: 48px;
+  width: 80px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.publications-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  min-height: 87vh;
+}
+
+.publication{
+  width: auto;
+  margin: 50 auto 0;
+}
+
+.publications-container > * {
+  flex-grow: 1;
+}

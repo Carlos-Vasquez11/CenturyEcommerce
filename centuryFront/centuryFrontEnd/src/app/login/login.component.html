@@ -1,0 +1,13 @@
+<section class="forms-container">
+  <section class="form-login">
+    <h5>Formulario Login</h5>
+    <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+      <input class="controls" type="text" name="email" placeholder="Correo">
+      <input class="controls" type="password" name="password" placeholder="Contraseña">
+      <input class="buttons" type="submit" name="" value="Ingresar">
+    </form>
+    <p><a href="#">¿Olvidastes tu Contraseña?</a></p>
+
+  </section>
+</section>
+

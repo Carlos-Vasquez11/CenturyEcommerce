@@ -1,0 +1,23 @@
+<header>
+
+  <div  class="header_logo">
+      <img src="../../assets/images/montaniaLogo.png" class="logo_img">
+      <p class="logo_texto">Century</p>
+  </div>
+
+  <a class="main_menu" (click)="irAShop()">shop</a>
+
+  <ul class="main_menu main_menu_right">
+      <li><a class="user_details_container" (click)="irALogin()"> <img src="../../assets/images/usuario_Icon.png" class="menu_user_icon"> Sign in</a></li>
+      <li><a (click)="irACompras()">Purchases</a></li>
+      <li>
+        <div class="cart-container" (click)="irACarrito()">
+          <img src="../../assets/images/carritoCompras.png" class="carritoCompras" alt="Cart icon" (click)="onCartClick()">
+          <div class="cart-count"> {{cartService.getCart().length}} </div>
+        </div>
+      </li>
+  </ul>
+
+
+
+</header>

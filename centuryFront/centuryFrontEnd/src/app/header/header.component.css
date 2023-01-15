@@ -1,0 +1,146 @@
+:root{
+  --purple-primary:         #bc4ed8;
+  --blue-complementary :   #2700b3;
+  --off-white:             #faf8f7;
+  --just-white:            #fff;
+  --bitcoin-orange:        #f7931a;
+}
+
+html{
+  font-size: 62.5%;
+  background-color: #faf8f7;
+  word-wrap: break-word;
+  margin: 0;
+  width: 100vw;
+  height: auto;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header{
+  width: 100%;
+  height: 8vh;
+
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #bc4ed8;
+  box-shadow: 0px 2px 10px gray;
+}
+
+header .header_logo{
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.main_menu{
+  height: auto;
+  align-self: center;
+  font-size: 2.4rem;
+  color: white;
+  font-weight: bold;
+}
+
+.main_menu_right li a{
+  color: white;
+}
+
+.main_menu_right{
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  padding-right: 50px;
+}
+
+.user_details_container{
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.menu_user_icon{
+  height: 35px;
+  padding-right: 9px;
+}
+
+body   {
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.logo_img{
+  height: 80px;
+}
+
+.logo_texto{
+  font-weight: bold;
+  font-size: 4rem;
+  color: white;
+}
+
+main{
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  background-color: #faf8f7;
+}
+
+footer{
+  background-color: #bc4ed8;
+  width: 100%;
+  height: 5vh;
+}
+
+header .cart-count {
+  margin-left: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.cart-container {
+  position: relative;
+}
+
+.cart-container :hover{
+  cursor: pointer;
+}
+
+.carritoCompras{
+  height: 35px;
+  padding-right: 9px;
+}
+
+.cart-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: -3px;
+  right: 3px;
+  z-index: 1;
+}
