@@ -1,0 +1,21 @@
+<div class="content">
+  <section class="featured-products">
+    <div *ngFor="let purchase of purchases">
+      <P>Purchase #{{purchase.id}}</P>
+      <P>TOTAL: {{calculateTotal(purchase)}}</P>
+      <div class="purchase">
+        <div class="product-card" *ngFor="let item of purchase.items">
+          <img [src]="item.product.photoUrl" alt="product">
+          <div class="description">
+            <p class="product-name">{{item.product.baseProduct.name}}</p>
+            <div class="info">
+              <p>UNITARY PRICE: {{item.product.baseProduct.price}}</p>
+              <p>QUANTITY: {{item.quantity}}</p>
+              <p>TOTAL: {{item.product.baseProduct.price * item.quantity}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

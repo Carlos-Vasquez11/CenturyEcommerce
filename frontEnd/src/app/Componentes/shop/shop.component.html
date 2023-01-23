@@ -1,0 +1,29 @@
+<div class="content">
+
+  <section class="main-input">
+      <div class="main-input-container">
+          <input type="text" placeholder="Buscar producto">
+          <span class="search-icon"></span>
+      </div>
+  </section>
+
+  <section class="featured-products">
+    <div class="product-list">
+        <div class="product-card" *ngFor="let publication of publications">
+            <img [src]="publication.product.photoUrl" alt="product">
+            <div class="description">
+                <p class="product-name">{{publication.product.baseProduct.name}}</p>
+                <p class="product-description">{{publication.product.baseProduct.name}}</p>
+                <div class="form-container">
+                    <form name="form">
+                          <select class="quantity" #quantitySelect>
+                            <option *ngFor="let i of getOptions(publication.quantity)" value="{{i}}">{{i}}</option>
+                          </select>
+                          <button class="card-button">Add to cart ↗</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>

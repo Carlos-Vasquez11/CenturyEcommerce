@@ -1,0 +1,28 @@
+<div class="content">
+
+  <section class="main-photo">
+      <div class="welcome-text">
+          <h1>Fashion knows no borders</h1>
+      </div>
+  </section>
+
+  <section class="featured-products">
+
+      <h1>Featured Products</h1>
+
+      <div class="product-list">
+          <div class="product-card" *ngFor="let publication of publications">
+
+              <img [src]="publication.product.photoUrl" alt="product">
+
+
+              <div class="description">
+                  <p>{{publication.product.baseProduct.name}}</p>
+              </div>
+
+          </div>
+
+      </div>
+
+  </section>
+</div>

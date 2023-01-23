@@ -1,0 +1,159 @@
+.content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 80px;
+  min-height: 100vh;
+}
+
+/* Searcher */
+
+.main-input{
+  padding: 50px;
+}
+
+.main-input .main-input-container{
+  width: 525px;
+  border-radius: 100px;
+  border: 1px solid #dfe1df;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  background-color: white;
+}
+
+.main-input-container:hover{
+  box-shadow: 0 1px 6px 0 #20212447;
+  border-radius: 100px;
+}
+
+.main-input .search-icon{
+  background-image: url('https://img.icons8.com/android/24/000000/search.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+}
+
+.main-input .main-input-container input{
+  width: 410px;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+
+.main-input .microphone-icon{
+  background-image: url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.featured-products{
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.product-card{
+  background-color: var(--just-white);
+  width: 550px;
+  height: 350px;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0px 0px 10px gray;
+
+  display: flex;
+
+}
+
+.product-card img{
+  width: 275px;
+  height: 350px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.product-card .description{
+  width: 300px;
+  height: 350px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.product-name{
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.product-description{
+  width: 255px;
+  height: 180px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  color:gray;
+
+  overflow: hidden;
+}
+
+.form{
+  height: 48px;
+}
+
+.form-container{
+  height: 64px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quantity{
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  text-align: center;
+  font-size: 2rem;
+  border: 0;
+  background-color: rgb(238, 238, 238);
+}
+
+.card-button{
+  display: inline-block;
+  height: 48px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 150px;
+  border: 0;
+  margin: auto;
+
+  margin-left: 48px;
+  font-weight: bold;
+  background-color: var(--primary);
+
+  cursor: pointer;
+}
